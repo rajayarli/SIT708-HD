@@ -47,8 +47,6 @@ layout activity_main
 layout fragment_digit_canvas
 layout info_bottom_sheet
 layout item_classification_result
-mipmap ic_launcher
-mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 navigation nav_graph
 string alt_bottom_sheet_chevron
