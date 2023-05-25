@@ -1,0 +1,12 @@
+task downloadModelFile(type: Download) {
+    src 'https://storage.googleapis.com/download.tensorflow.org/models/tflite/task_library/digit_classifier/android/mnist_metadata.tflite'
+    dest project.ext.ASSET_DIR + '/mnist.tflite'
+    overwrite false
+}
+
+task copyTestModel(type: Copy, dependsOn: downloadModelFile) {
+    from project.ext.ASSET_DIR + '/mnist.tflite'
+    into project.ext.TEST_ASSETS_DIR
+}
+
+preBuild.dependsOn downloadModelFile, copyTestModel

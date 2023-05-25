@@ -1,0 +1,117 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="org.tensorflow.lite.examples.digitclassification"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+8-->D:\OneDrive - Deakin University\Desktop\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->D:\OneDrive - Deakin University\Desktop\android\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+12    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+13    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+14
+15    <application
+15-->D:\OneDrive - Deakin University\Desktop\android\app\src\main\AndroidManifest.xml:6:5-37:19
+16        android:allowBackup="true"
+16-->D:\OneDrive - Deakin University\Desktop\android\app\src\main\AndroidManifest.xml:7:9-35
+17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+17-->[androidx.core:core:1.8.0] C:\Users\rajar\.gradle\caches\transforms-3\8ecbf2a64a2c734a259032d350ec4a2e\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+18        android:debuggable="true"
+19        android:extractNativeLibs="false"
+20        android:icon="@mipmap/ic_launcher"
+20-->D:\OneDrive - Deakin University\Desktop\android\app\src\main\AndroidManifest.xml:8:9-43
+21        android:label="@string/app_name"
+21-->D:\OneDrive - Deakin University\Desktop\android\app\src\main\AndroidManifest.xml:9:9-41
+22        android:roundIcon="@mipmap/ic_launcher_round"
+22-->D:\OneDrive - Deakin University\Desktop\android\app\src\main\AndroidManifest.xml:10:9-54
+23        android:supportsRtl="true"
+23-->D:\OneDrive - Deakin University\Desktop\android\app\src\main\AndroidManifest.xml:12:9-35
+24        android:taskAffinity=""
+24-->D:\OneDrive - Deakin University\Desktop\android\app\src\main\AndroidManifest.xml:11:9-32
+25        android:testOnly="true" >
+26        <activity
+26-->D:\OneDrive - Deakin University\Desktop\android\app\src\main\AndroidManifest.xml:14:9-35:20
+27            android:name="org.tensorflow.lite.examples.digitclassification.MainActivity"
+27-->D:\OneDrive - Deakin University\Desktop\android\app\src\main\AndroidManifest.xml:15:13-41
+28            android:clearTaskOnLaunch="true"
+28-->D:\OneDrive - Deakin University\Desktop\android\app\src\main\AndroidManifest.xml:16:13-45
+29            android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize"
+29-->D:\OneDrive - Deakin University\Desktop\android\app\src\main\AndroidManifest.xml:17:13-91
+30            android:exported="true"
+30-->D:\OneDrive - Deakin University\Desktop\android\app\src\main\AndroidManifest.xml:18:13-36
+31            android:resizeableActivity="true"
+31-->D:\OneDrive - Deakin University\Desktop\android\app\src\main\AndroidManifest.xml:19:13-46
+32            android:rotationAnimation="seamless"
+32-->D:\OneDrive - Deakin University\Desktop\android\app\src\main\AndroidManifest.xml:20:13-49
+33            android:theme="@style/AppTheme" >
+33-->D:\OneDrive - Deakin University\Desktop\android\app\src\main\AndroidManifest.xml:21:13-44
+34
+35            <!-- Main app intent filter -->
+36            <intent-filter>
+36-->D:\OneDrive - Deakin University\Desktop\android\app\src\main\AndroidManifest.xml:25:13-29:29
+37                <action android:name="android.intent.action.MAIN" />
+37-->D:\OneDrive - Deakin University\Desktop\android\app\src\main\AndroidManifest.xml:26:17-69
+37-->D:\OneDrive - Deakin University\Desktop\android\app\src\main\AndroidManifest.xml:26:25-66
+38
+39                <category android:name="android.intent.category.LAUNCHER" />
+39-->D:\OneDrive - Deakin University\Desktop\android\app\src\main\AndroidManifest.xml:28:17-77
+39-->D:\OneDrive - Deakin University\Desktop\android\app\src\main\AndroidManifest.xml:28:27-74
+40            </intent-filter>
+41
+42            <!-- Declare notch support -->
+43            <meta-data
+43-->D:\OneDrive - Deakin University\Desktop\android\app\src\main\AndroidManifest.xml:32:13-34:40
+44                android:name="android.notch_support"
+44-->D:\OneDrive - Deakin University\Desktop\android\app\src\main\AndroidManifest.xml:33:17-53
+45                android:value="true" />
+45-->D:\OneDrive - Deakin University\Desktop\android\app\src\main\AndroidManifest.xml:34:17-37
+46        </activity>
+47
+48        <uses-library
+48-->[androidx.window:window:1.0.0] C:\Users\rajar\.gradle\caches\transforms-3\1babf2cb24cc48b6b01a99e7a77d23ad\transformed\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
+49            android:name="androidx.window.extensions"
+49-->[androidx.window:window:1.0.0] C:\Users\rajar\.gradle\caches\transforms-3\1babf2cb24cc48b6b01a99e7a77d23ad\transformed\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
+50            android:required="false" />
+50-->[androidx.window:window:1.0.0] C:\Users\rajar\.gradle\caches\transforms-3\1babf2cb24cc48b6b01a99e7a77d23ad\transformed\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
+51        <uses-library
+51-->[androidx.window:window:1.0.0] C:\Users\rajar\.gradle\caches\transforms-3\1babf2cb24cc48b6b01a99e7a77d23ad\transformed\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
+52            android:name="androidx.window.sidecar"
+52-->[androidx.window:window:1.0.0] C:\Users\rajar\.gradle\caches\transforms-3\1babf2cb24cc48b6b01a99e7a77d23ad\transformed\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
+53            android:required="false" />
+53-->[androidx.window:window:1.0.0] C:\Users\rajar\.gradle\caches\transforms-3\1babf2cb24cc48b6b01a99e7a77d23ad\transformed\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
+54
+55        <activity
+55-->[com.github.divyanshub024:AndroidDraw:v0.1] C:\Users\rajar\.gradle\caches\transforms-3\af2d58c9c0e6d7b429fde3e99748afd7\transformed\jetified-AndroidDraw-v0.1\AndroidManifest.xml:12:9-14:66
+56            android:name="com.divyanshu.draw.activity.DrawingActivity"
+56-->[com.github.divyanshub024:AndroidDraw:v0.1] C:\Users\rajar\.gradle\caches\transforms-3\af2d58c9c0e6d7b429fde3e99748afd7\transformed\jetified-AndroidDraw-v0.1\AndroidManifest.xml:13:13-71
+57            android:theme="@style/Theme.AppCompat.NoActionBar" />
+57-->[com.github.divyanshub024:AndroidDraw:v0.1] C:\Users\rajar\.gradle\caches\transforms-3\af2d58c9c0e6d7b429fde3e99748afd7\transformed\jetified-AndroidDraw-v0.1\AndroidManifest.xml:14:13-63
+58
+59        <provider
+59-->[androidx.emoji2:emoji2:1.2.0] C:\Users\rajar\.gradle\caches\transforms-3\7f7695ce55d13523f3f1fde6377e2366\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+60            android:name="androidx.startup.InitializationProvider"
+60-->[androidx.emoji2:emoji2:1.2.0] C:\Users\rajar\.gradle\caches\transforms-3\7f7695ce55d13523f3f1fde6377e2366\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+61            android:authorities="org.tensorflow.lite.examples.digitclassification.androidx-startup"
+61-->[androidx.emoji2:emoji2:1.2.0] C:\Users\rajar\.gradle\caches\transforms-3\7f7695ce55d13523f3f1fde6377e2366\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+62            android:exported="false" >
+62-->[androidx.emoji2:emoji2:1.2.0] C:\Users\rajar\.gradle\caches\transforms-3\7f7695ce55d13523f3f1fde6377e2366\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+63            <meta-data
+63-->[androidx.emoji2:emoji2:1.2.0] C:\Users\rajar\.gradle\caches\transforms-3\7f7695ce55d13523f3f1fde6377e2366\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+64                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+64-->[androidx.emoji2:emoji2:1.2.0] C:\Users\rajar\.gradle\caches\transforms-3\7f7695ce55d13523f3f1fde6377e2366\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+65                android:value="androidx.startup" />
+65-->[androidx.emoji2:emoji2:1.2.0] C:\Users\rajar\.gradle\caches\transforms-3\7f7695ce55d13523f3f1fde6377e2366\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+66            <meta-data
+66-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\rajar\.gradle\caches\transforms-3\186ef96a106435e66eceb86645f5797f\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+67                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+67-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\rajar\.gradle\caches\transforms-3\186ef96a106435e66eceb86645f5797f\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+68                android:value="androidx.startup" />
+68-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\rajar\.gradle\caches\transforms-3\186ef96a106435e66eceb86645f5797f\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+69        </provider>
+70    </application>
+71
+72</manifest>

@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "C:\\Users\\rajar\\.gradle\\daemon\\7.6.1\\org.tensorflow.lite.examples.digitclassification.app-mergeDebugResources-45:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\rajar\\.gradle\\daemon\\7.6.1\\org.tensorflow.lite.examples.digitclassification.app-main-48:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "org.tensorflow.lite.examples.digitclassification.app-mergeDebugResources-45:/layout/info_bottom_sheet.xml",
+        "source": "org.tensorflow.lite.examples.digitclassification.app-main-48:/layout/info_bottom_sheet.xml"
+    },
+    {
+        "merged": "C:\\Users\\rajar\\.gradle\\daemon\\7.6.1\\org.tensorflow.lite.examples.digitclassification.app-mergeDebugResources-45:\\layout\\info_bottom_sheet.xml",
+        "source": "C:\\Users\\rajar\\.gradle\\daemon\\7.6.1\\org.tensorflow.lite.examples.digitclassification.app-main-48:\\layout\\info_bottom_sheet.xml"
+    },
+    {
+        "merged": "C:\\Users\\rajar\\.gradle\\daemon\\7.6.1\\org.tensorflow.lite.examples.digitclassification.app-mergeDebugResources-45:\\layout\\fragment_digit_canvas.xml",
+        "source": "C:\\Users\\rajar\\.gradle\\daemon\\7.6.1\\org.tensorflow.lite.examples.digitclassification.app-main-48:\\layout\\fragment_digit_canvas.xml"
+    },
+    {
+        "merged": "C:\\Users\\rajar\\.gradle\\daemon\\7.6.1\\org.tensorflow.lite.examples.digitclassification.app-mergeDebugResources-45:\\layout\\item_classification_result.xml",
+        "source": "C:\\Users\\rajar\\.gradle\\daemon\\7.6.1\\org.tensorflow.lite.examples.digitclassification.app-main-48:\\layout\\item_classification_result.xml"
+    }
+]
